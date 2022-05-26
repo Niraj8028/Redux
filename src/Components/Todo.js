@@ -23,7 +23,7 @@ const Todo = ({ todos, markComplete }) => {
   const mapStateToProps = (state) => ({
     todos: state.todos,
   });
-  
+   
   const mapDispatchToProps = (dispatch) => ({
     markComplete: (id) => {
       dispatch(removeTodo(id));
